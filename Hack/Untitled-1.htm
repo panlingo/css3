@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#aa { 
+	position:fixed;
+	left:50%;
+	top:50%;
+
+	_position:absolute;
+	_left:expression(documentElement.scrollLeft + documentElement.clientWidth / 2);
+	_top:expression(documentElement.scrollTop + documentElement.clientHeight / 2); 
+	width:50px;
+	height:50px;
+	background-color:#F00;
+	word-wrap:break-word;
+	margin:-25px 0 0 -25px;
+}
+.bgLayer { display:none; position:fixed; left:0; top:0; width:100%; height:100%; background-color:#000; filter:alpha(opacity:30); opacity:0.3; }
+</style>
+</head>
+
+<body>
+<div style="height:1000px;background-color:#F2F2F2"></div>
+<div id="aa"></div>
+<input type="button" value="layer()" onclick="layer()" />
+<div class="bgLayer"></div>
+<script src="jquery-min.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<script>
+function layer() {
+	/*$('.bgLayer').animate({
+		width: '0',
+		height: '0'
+	}, { duration: "slow", easing: "easeOutBack" });*/
+	//alert('aa');
+	$('.bgLayer').slideDown('fast');
+}
+$(function() {
+	$('.bgLayer').click(function() {
+		$(this).slideUp('fast');
+	});	
+})
+</script>
+</body>
+</html>

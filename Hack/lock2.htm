@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>lock page</title>
+<style>
+#pageOverlay { position:fixed; top:0; left:0; z-index:1987; width:100%; height:100%; background:#000; filter:alpha(opacity=70); opacity:0.7; }
+
+#demo1 { position:fixed; top:50%; left:50%; z-index:1988; width:600px; height:400px; margin:-200px 0 0 -300px; _margin:-100px 0 0 -300px; background-color:#FFF; }
+#demo2 { position:fixed; top:50%; left:50%; z-index:1989; width:100px; height:100px; margin:-50px 0 0 -50px;   background-color:#FFF; }
+
+/*IE6 fixed*/
+* html { background:url(*) fixed; }
+* html body { margin:0; height:100%; }
+* html #pageOverlay, * html #demo1, * html #demo2 { position:absolute; left:expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth); top:expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight); zoom:1; }
+</style>
+</head>
+
+<body>
+<ol id="test" onclick="document.getElementById('pageOverlay').style.visibility = 'visible'">
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+<li>囧</li>
+</ol>
+
+<div>
+	<div id="pageOverlay" onclick="this.style.visibility = 'hidden'"></div>
+	<div id="demo2">demo1</div>
+	<div id="demo1">demo1</div>
+</div>
+
+</body>
+</html>

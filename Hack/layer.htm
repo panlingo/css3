@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<style>
+html, body, div { margin:0; padding:0; }
+#demo { height:1500px; background-color:#F2F2F2; }
+#layerBox { position:absolute; }
+#bgLayer { position:fixed; left:0; top:0; z-index:1; width:100%; height:100%; background-color:#000; filter:alpha(opacity:30); opacity:0.3; }
+#layerBody { position:fixed; left:0; top:0; z-index:1; width:100%; height:100%; }
+* html { background:url(*) fixed; }
+* html body { margin:0; height:100%; }
+* html #bgLayer, * html #layerBody { position: absolute; left: expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth); top: expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight); zoom:1; }
+#layeMain { position:absolute; left:50%; top:50%; width:400px; height:300px; margin:-150px 0 0 -200px; background-color:#CCC; }
+</style>
+</head>
+
+<body>
+<div id="demo"></div>
+
+<div id="layerBox">
+	<div id="bgLayer"></div>
+    <div id="layerBody">
+    	<div id="layeMain">asdfasdf</div>
+    </div>
+</div>
+</body>
+</html>
